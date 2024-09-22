@@ -49,3 +49,5 @@ RUN \
 
 WORKDIR /
 COPY rootfs /
+
+COPY ./start_hassio.sh /
