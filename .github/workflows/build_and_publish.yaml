@@ -14,11 +14,11 @@ jobs:
     strategy:
       matrix:
         architecture:
-          - { arch: aarch64, build_from: ghcr.io/home-assistant/aarch64-base-python:3.12-alpine3.20 }
-          - { arch: armhf, build_from: ghcr.io/home-assistant/armhf-base-python:3.12-alpine3.20 }
-          - { arch: armv7, build_from: ghcr.io/home-assistant/armv7-base-python:3.12-alpine3.20 }
-          - { arch: amd64, build_from: ghcr.io/home-assistant/amd64-base-python:3.12-alpine3.20 }
-          - { arch: i386, build_from: ghcr.io/home-assistant/i386-base-python:3.12-alpine3.20 }
+          - { arch: aarch64, build_from: "ghcr.io/home-assistant/aarch64-base-python:3.12-alpine3.20" }
+          - { arch: armhf, build_from: "ghcr.io/home-assistant/armhf-base-python:3.12-alpine3.20" }
+          - { arch: armv7, build_from: "ghcr.io/home-assistant/armv7-base-python:3.12-alpine3.20" }
+          - { arch: amd64, build_from: "ghcr.io/home-assistant/amd64-base-python:3.12-alpine3.20" }
+          - { arch: i386, build_from: "ghcr.io/home-assistant/i386-base-python:3.12-alpine3.20" }
 
     steps:
     - name: Checkout repository
